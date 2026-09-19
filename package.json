@@ -1,0 +1,43 @@
+{
+  "name": "@fomadev/next-advanced-sitemap-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CI-friendly command-line sitemap checker for next-advanced-sitemap: validates schema, catches broken (404/5xx) links, and reports file size — designed to fail your build before Google ever sees a broken sitemap.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "next-advanced-sitemap-check": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": ["nextjs", "sitemap", "seo", "cli", "ci", "link-checker"],
+  "author": "fomadev",
+  "license": "FomaDev Public License",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fomadev/next-advanced-sitemap-cli.git"
+  },
+  "homepage": "https://github.com/fomadev/next-advanced-sitemap-cli#readme",
+  "dependencies": {
+    "next-advanced-sitemap": ">=2.0.0"
+  },
+  "devDependencies": {
+    "next-advanced-sitemap": "file:../next-advanced-sitemap",
+    "@types/node": "^26.1.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+FomaDev Public License (FPL)
+
+Copyright (c) 2026 FomaDev. All rights reserved.
+
+This license protects @fomadev/next-advanced-sitemap-cli innovation while encouraging community collaboration.
+
+1. Personal and Educational Use
+The use of the @fomadev/next-advanced-sitemap-cli library and CLI is entirely free for developers and companies, including within commercial projects and CI pipelines, as long as it is used as a dependency or tool. You may integrate and use this tool in your workflows, websites, or applications without any payment to FomaDev.
+
+2. Contributions (Fork & Pull Request)
+Forks are authorized ONLY for contributing to the official FomaDev project. Any improvements, bug fixes, or new features must be submitted via a Pull Request to the original repository. By contributing, you agree that your code will be integrated under this same license.
+
+3. Commercial Use and Competition (PAID)
+A paid commercial license is MANDATORY for the following cases:
+- Selling, redistributing, or sub-licensing the source code of this library.
+- Creating a derivative sitemap checking tool or library based on this source code.
+- Integrating this source code directly into another commercial library or framework intended for sale.
+- Building a paid "Sitemap as a Service" or commercial auditing platform based on this specific engine.
+
+4. Prohibition of Independent Forks
+Maintaining a separate version (permanent Fork) of this project to bypass FomaDev's authority or to create a competing package on registries (such as npm) is strictly prohibited.
+
+5. Licensing Contact
+To obtain commercial authorization, negotiate an exploitation license, or for any questions regarding professional use, contact Fordi (FomaDev) directly.
